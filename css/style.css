@@ -16,6 +16,7 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0px;
 }
 
 nav {
@@ -45,7 +46,7 @@ header nav img {
 nav a:hover,
 nav a:focus {
 
-  padding-top: 10px;
+  padding-top: 15px;
   border-top: 2px solid #0065FC;
   color: #0065FC;
 }
@@ -143,15 +144,12 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 30px;
   gap: 30px;
-  width: 65%;
-
-  width: 871px;
-  height: 614px;
 }
 
 /****** Populaires ***********/
@@ -172,18 +170,13 @@ a {
 
 .populaires-cards img {
   width: 33%;
-  height: 140px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  height: 153px;
 }
 
 .populaires-cards .card-content {
-  width: 67%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -252,6 +245,12 @@ header > nav > img {
   height: 19px;
 }
 
+header > nav > ul > li > a {
+
+  padding-top: 15px;
+  border-top: 2px #FFF solid;
+}
+
 /*******************Recherche*******************/
 
 form {
@@ -262,8 +261,6 @@ form {
 
 form i {
 
-  
-  position: absolute;
   width: 50px;
   height: 49px;
   left: 0px;
@@ -365,12 +362,8 @@ form input::placeholder {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 15px;
-  gap: 50px;
-
-  background: #F2F2F2;
-  border-radius: 15px;
+  gap: 60px;
 }
 
 .section-title {
@@ -390,13 +383,8 @@ form input::placeholder {
 .colonne-port {
 
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 0px;
   gap: 55px;
-
-  width: 811px;
-  height: 207px;
 
   order: 1;
 }
@@ -404,24 +392,13 @@ form input::placeholder {
 .colonne-mer {
 
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 0px;
   gap: 55px;
-
-  width: 811px;
-  height: 207px;
 
   order: 2;
 }
 
 .afficher-plus {
-
-  width: 811px;
-  height: 21px;
-
-  margin: -30px;
-  margin-left: 5px;
 
   font-family: 'Raleway';
   font-style: normal;
@@ -488,11 +465,7 @@ form input::placeholder {
 
 .populaires-cards .card {
 
-  width: 369px;
-  height: 125px;
-
   background: #FFFFFF;
-
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
@@ -501,13 +474,7 @@ form input::placeholder {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 0px;
-  gap: 4px;
-  
-  width: 226px;
-  height: 85px;
-
   margin-left: 100px;
 }
 
@@ -519,17 +486,11 @@ form input::placeholder {
 
 /*****************Activites*****************/
 
-.contenair-activites-marseille {
+.activites-marseille {
 
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 30px;
   gap: 30px;
-    
-  width: 1340px;
-  height: 559px;
-
   margin-top: -70px;
 }
 
@@ -553,14 +514,12 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   padding: 20px 19px;
-  gap: 10px;
 
   width: 261px;
   height: 30px;
 
-  background: #FFFFFF;
+  background: #FFF;
   border-radius: 0px 0px 20px 20px;
 }
 
@@ -573,9 +532,6 @@ figcaption {
 
 .text-deux {
 
-  width: 1280px;
-  height: 30px;
-
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -584,40 +540,29 @@ figcaption {
 
   color: #000000;
 
-  margin: 70px;
+  margin: 60px;
   margin-left: 20px;
 }
 
 /*****************Footer*****************/
 
-footer {
+.footer {
 
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-
-  width: 1340px;
-  height: 163px;
-
   background: #F2F2F2;
-  margin-top: -70px;
-  }
-
-footer > section > ul {
-
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  padding: 0px;
-  gap: 15px;
-  margin: 15px;
-
-  width: 446.67px;
-  height: 163px;
+  padding: 20px;
 }
 
-footer > section > h3 {
+.footer h3 {
 
-  margin: 15px;
+  margin: 0;
+}
+
+.footer-bloc {
+
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  margin-bottom: 50;
+  gap: 15px;
 }
