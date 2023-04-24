@@ -139,6 +139,10 @@ nav a:focus {
   color: #0065FC;
 }
 
+.titre-principale {
+  margin-top: -5px;
+}
+
 
 /*******************Recherche*******************/
 
@@ -264,8 +268,14 @@ form input::placeholder {
 }
 
 .filtres-buttons button i {
-  
+
   margin-top: -2px;
+}
+
+.texte-infos {
+
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 
@@ -491,6 +501,7 @@ section > h2 > ul > li{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1023px) {
+
   .hebergements-and-populaires {
       flex-direction: column;
   }
@@ -521,6 +532,54 @@ section > h2 > ul > li{
   .populaires-cards .card-subtitle {
       font-size: 13px;
   }
+
+  .image-activites {
+      height: 200px;
+  }
+
+  .filtres {
+      gap: 0px;
+      flex-direction: column;
+  }
+
+  .filtres-buttons {
+      gap: 10px;
+  }
+
+  .texte-infos {
+      margin-top: 35px;
+      margin-bottom: 35px;
+  }
+
+  .titre-principale {
+      margin-top: -5px;
+  }
+
+  section.filtres > h2 {
+      margin-bottom: 10px;
+  }
+
+  h1 {
+      font-size: 22px;
+  }
+
+  figure {
+      height: 100%;
+  }
+
+  figcaption {
+      display: flex;
+      margin: 0px;
+      height: 65px;
+      padding: 0px 15px;
+      font-size: 14px;
+      margin-bottom: 30px;
+  }
+
+  form {
+      margin-bottom: 10px;
+  }
+
 }
 
 /* Small devices (phones, less than 768px) */
