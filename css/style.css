@@ -636,6 +636,9 @@ section > h2 > ul > li{
 
   .liens > li > a {
     padding-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #f2f2f2;
   }
 
   .liens > li > a:hover {
@@ -644,7 +647,8 @@ section > h2 > ul > li{
   }
 
   .liens {
-    display: flex;
+    width: 100%;
+    text-align: center;
   }
 
   nav {
@@ -653,20 +657,34 @@ section > h2 > ul > li{
     margin-top: 30px;
   }
 
+  .liens > li {
+    width: 100%;
+  }
+
+  .liens > ul {
+    width: 100%;
+  }
+
 /*******************Recherche*******************/
 
   input {
-    width: 100%;
+    width: 85%;
   }
 
   .bouton-recherche > span {
     display: none;
   }
 
+  form {
+    position: relative;
+  }
+
   form > button {
     border: 1px solid #FFF;
-    width: 20%;
-    border-radius: 15px
+    width: 15%;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
   }
 
   .fa-magnifying-glass {
