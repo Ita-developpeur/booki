@@ -61,7 +61,7 @@ a {
 }
 
 .card {
-  background-color: white;
+  background-color: #FFF;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   padding: 5px;
@@ -76,14 +76,13 @@ a {
 }
 
 .card-subtitle {
-  width: 220px;
   height: 16px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #000000;
+  color: #000;
 }
 
 .fa-solid {
@@ -114,8 +113,8 @@ nav > a {
 nav a:hover,
 nav a:focus {
   padding-top: 15px;
-  border-top: 2px solid #0065FC;
-  color: #0065FC;
+  border-top: 2px solid var(--main-color);
+  color: var(--main-color);
 }
 
 .titre-principale {
@@ -137,31 +136,31 @@ form {
 form i {
   left: 0px;
   top: 0px;
-  background: #F2F2F2;
-  border: 0px solid #F2F2F2;
+  background: var(--main-bg-color);
+  border: 0px solid var(--main-bg-color);
   border-radius: 15px 0px 0px 15px;
 }
 
 .fa-map-marker-alt {
-  color: #000000;
+  color: #000;
   font-size: 1.1em;
   padding: 15px;
 }
 
 form button {
-  background: #0065FC;
-  border: 1px solid #0065FC;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 0px 15px 15px 0px;
   height: 49px;
   width: 132px;
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: #FFF;
   font-style: normal;
 }
 
 form input {
-  border: 2px solid #f2f2f2;
+  border: 2px solid var(--main-bg-color);
   font-weight: 700;
   font-size: 1em;
   padding: 0 15px;
@@ -170,7 +169,7 @@ form input {
 }
 
 form input::placeholder {
-  color: black;
+  color: #000;
   opacity: 1;
 }
 
@@ -235,8 +234,9 @@ form input::placeholder {
   height: 50px;
 }
 
-.filtres-buttons button:hover {
-  background-color:#DEEBFF
+.filtres-buttons button:hover,
+.filtres-buttons button:focus {
+  background-color:var(--filter-bg-color)
 }
 
 .filtres-buttons button i {
@@ -277,7 +277,7 @@ form input::placeholder {
 .card-deux{
   width: calc((100% - 80px) / 3);
   margin-top: 0px;
-  background: #ffffff;  
+  background: #fff;  
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
@@ -358,6 +358,10 @@ div.populaires-cards{
   margin-top: -30px;
 }
 
+.aug {
+  margin-bottom: 30px;
+}
+
 /*****************Activites*****************/
 
 .activites-marseille {
@@ -400,7 +404,7 @@ figcaption {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
+  color: #000;
   margin: 60px;
   margin-left: 20px;
 }
@@ -413,7 +417,7 @@ section > h2 > ul > li{
 
 .footer {
   display: flex;
-  background: #F2F2F2;
+  background: var(--main-bg-color);
   padding: 20px;
 }
 
@@ -425,7 +429,7 @@ section > h2 > ul > li{
   display: flex;
   width: 33%;
   flex-direction: column;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   gap: 15px;
 }
 
@@ -567,10 +571,11 @@ section > h2 > ul > li{
     padding-bottom: 15px;
     width: 100%;
     display: inline-block;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid var(--main-bg-color);
   }
 
-  .liens > li > a:hover {
+  .liens > li > a:hover,
+  .liens > li > a:focus {
     border-top: 0px;
     border-bottom: 2px solid;
   }
@@ -622,7 +627,7 @@ section > h2 > ul > li{
 
   .fa-magnifying-glass {
     border-radius: 15px 15px 15px 15px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: #FFF;
     display: block;
   }
@@ -670,7 +675,7 @@ section > h2 > ul > li{
 
   section.populaires {
     order: -1;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 0px;
   }
 
